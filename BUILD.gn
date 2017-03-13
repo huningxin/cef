@@ -227,7 +227,6 @@ group("cef") {
   testonly = true
   deps = [
     ":cefclient",
-    ":cefsimple",
     ":ceftests",
   ]
 }
@@ -1777,7 +1776,7 @@ if (is_mac) {
   # cefsimple targets.
   #
 
-  executable("cefsimple") {
+  executable("webvr") {
     sources = gypi_paths2.includes_common +
               gypi_paths2.includes_wrapper +
               gypi_paths2.cefsimple_sources_common
